@@ -15,7 +15,7 @@ The following things were changed from the Ethereum beacon chain deposit contrac
 ## About 
 
 Wencash Genesis Deposit Contract is deployed on Ethereum: [0xCAE7A9d478Ea404210de26952015B8F5D3B4194A](https://etherscan.io/address/0xCAE7A9d478Ea404210de26952015B8F5D3B4194A#code)
-This contract allows anyone to register as Genesis Validators for the Wencash Blockchain.
+This contract allows anyone to register Genesis Validators for the Wencash Blockchain.
 
 To become a Genesis Validator, a participant must send the deposit data (using the `deposit` method):
 - public key,
