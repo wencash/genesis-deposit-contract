@@ -75,7 +75,7 @@ stake_amount: 32000000000000000000     (32 WEN in wei)
 4. [**OPTIONAL**] Using [Remix](https://remix.ethereum.org/), interact with [Wencash Genesis Deposit Contract](https://etherscan.io/address/0xCAE7A9d478Ea404210de26952015B8F5D3B4194A#code) to call `batchDeposit` method in order to make 32 WEN to 4096 WEN deposits for your future genesis validators (1 to 128) with the data provided in your `deposit_data-*.json` (previously created in step 1). Again, there are several ways to help you generate the input arguments for `batchDeposit` method, here is an example:
 
 ```sh
-cd ./dist/validator_keys
+cd ./validator_keys
 jq '([.[].pubkey] | "0x" + join("")), "0x" + .[0].withdrawal_credentials, ([.[].signature] | "0x" + join("")), ["0x" + .[].deposit_data_root]' ./deposit_data-*.json > ./output.json
 ```
 
